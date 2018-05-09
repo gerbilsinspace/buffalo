@@ -5,4 +5,9 @@ describe('buffalo', () => {
     const result = buffalo()
     expect(result).toEqual();
   });
+
+  it('should return "right" when passed the number 0', () => {
+    const result = buffalo(0);
+    expect(result).toEqual('right');
+  });
 });

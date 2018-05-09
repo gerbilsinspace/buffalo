@@ -1,5 +1,5 @@
 const buffalo = () => {
-  return 'left';
+  return 'right';
 };
 
 export default buffalo;

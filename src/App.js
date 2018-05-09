@@ -8,12 +8,16 @@ class App extends Component {
     super(props);
     this.state = {
       minutes: 0,
-      hand: null
+      hand: 'right'
     };
   }
 
   updateMinutes(minutes) {
     this.setState({minutes});
+  }
+
+  updateHand(hand) {
+    this.setState({hand});
   }
 
   render() {
@@ -22,8 +26,10 @@ class App extends Component {
         <header className="App-header">
           <Input type='number' defaultValue='0' onChange={(_, {value}) => {
             this.updateMinutes(Number.parseInt(value, 10));
+
             if (buffalo) {
-              buffalo(this.state.minutes);
+              const hand = buffalo(value) || 'incorrect number';
+              this.updateHand(hand);
             }
           }} />
         </header>

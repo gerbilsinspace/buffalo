@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Input type='number' defaultValue='0' onChange={(_, {value}) => {
-            this.updateMinutes(Number.parseInt(value));
+            this.updateMinutes(Number.parseInt(value, 10));
             if (buffalo) {
               buffalo(this.state.minutes);
             }

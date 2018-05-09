@@ -20,4 +20,9 @@ describe('buffalo', () => {
     const result = buffalo(30);
     expect(result).toEqual('left');
   })
+
+  it('should return "left when passed the number 59', () => {
+    const result = buffalo(59);
+    expect(result).toEqual('left');
+  });
 });

@@ -1,9 +1,10 @@
 const buffalo = (minute) => {
-  if (minute === undefined) {
-    return;
-  }
-
-  if (minute < 0 || minute >= 60) {
+  if (
+    (minute === undefined) ||
+    (minute < 0) ||
+    (minute >= 60) ||
+    (minute === 'NaN')
+  ) {
     return;
   }
 

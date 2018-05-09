@@ -67,4 +67,20 @@ describe('buffalo', () => {
     const result = buffalo(55);
     expect(result).toEqual('left');
   });
+
+  // Test outside the boundaries
+  it('should return null when given -1', () => {
+    const result = buffalo(-1);
+    expect(result).toEqual();
+  });
+
+  it('should return null when given 60', () => {
+    const result = buffalo(-1);
+    expect(result).toEqual();
+  });
+
+  it('should return null when given null', () => {
+    const result = buffalo();
+    expect(result).toEqual();
+  });
 });

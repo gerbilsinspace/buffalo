@@ -79,7 +79,7 @@ describe('buffalo', () => {
     expect(result).toEqual();
   });
 
-  it('should return null when given null', () => {
+  it('should return null when given no number', () => {
     const result = buffalo();
     expect(result).toEqual();
   });

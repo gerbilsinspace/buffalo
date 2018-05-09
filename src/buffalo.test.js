@@ -83,4 +83,30 @@ describe('buffalo', () => {
     const result = buffalo();
     expect(result).toEqual();
   });
+
+  // Added by the testers
+  it('should return nothing when given the text "NaN"', () => {
+    const result = buffalo('NaN');
+    expect(result).toEqual();
+  });
+
+  it('should return "right" when given 0.2', () => {
+    const result = buffalo(0.2);
+    expect(result).toEqual('right');
+  });
+
+  it('should return "left" when given 29.2', () => {
+    const result = buffalo(29.2);
+    expect(result).toEqual('left');
+  });
+
+  it('should return nothing when gived 123456789', () => {
+    const result = buffalo(123456789);
+    expect(result).toEqual();
+  });
+
+  it('should return nothing when given -123456789', () => {
+    const result = buffalo(-123456789);
+    expect(result).toEqual();
+  });
 });

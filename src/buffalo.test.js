@@ -69,17 +69,17 @@ describe('buffalo', () => {
   });
 
   // Test outside the boundaries
-  it('should return null when given -1', () => {
+  it('should return nothing when given -1', () => {
     const result = buffalo(-1);
     expect(result).toEqual();
   });
 
-  it('should return null when given 60', () => {
+  it('should return nothing when given 60', () => {
     const result = buffalo(-1);
     expect(result).toEqual();
   });
 
-  it('should return null when given no number', () => {
+  it('should return nothing when given no number', () => {
     const result = buffalo();
     expect(result).toEqual();
   });

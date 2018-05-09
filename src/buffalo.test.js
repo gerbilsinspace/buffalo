@@ -59,7 +59,7 @@ describe('buffalo', () => {
   });
 
   it('should return "left" when passed the number 34', () => {
-    const result = buffalo(13);
+    const result = buffalo(34);
     expect(result).toEqual('left');
   });
 

@@ -100,7 +100,7 @@ describe('buffalo', () => {
     expect(result).toEqual('left');
   });
 
-  it('should return nothing when gived 123456789', () => {
+  it('should return nothing when given 123456789', () => {
     const result = buffalo(123456789);
     expect(result).toEqual();
   });

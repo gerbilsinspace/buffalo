@@ -75,7 +75,7 @@ describe('buffalo', () => {
   });
 
   it('should return nothing when given 60', () => {
-    const result = buffalo(-1);
+    const result = buffalo(60);
     expect(result).toEqual();
   });
 
